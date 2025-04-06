@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 
 const dist = "./dist/";
 
+
 gulp.task("build-js", () => {
   return gulp
     .src("./src/js/main.js")
@@ -122,11 +123,11 @@ gulp.task("images", function () {
         .pipe(browsersync.stream());
 });
 
-gulp.task("pages", function () {
-  return gulp
-          .src("src/pages/**/*")
-          .pipe(gulp.dest(`${dist}/pages`))
-})
+// gulp.task("pages", function () {
+//   return gulp
+//           .src("src/pages/**/*")
+//           .pipe(gulp.dest(`${dist}/pages`))
+// })
 
 gulp.task("mailer", function () {
   return gulp.src("src/mailer/**/*")
@@ -151,10 +152,10 @@ gulp.task("watch", function () {
   gulp.watch("src/fonts/**/*", gulp.series("fonts"));
   gulp.watch("src/icons/**/*", gulp.series("icons"));
   gulp.watch("src/img/**/*", gulp.series("images"));
-  gulp.watch("src/pages/**/*.html", gulp.series("pages"));
+  // gulp.watch("src/pages/**/*.html", gulp.series("pages"));
   gulp.watch("src/assets/**/*.*", gulp.series("assets"));
 });
 
-gulp.task("build", gulp.parallel("build-js", "styles", "html", "fonts", "icons", "images", "pages", "assets"));
+gulp.task("build", gulp.parallel("build-js", "styles", "html", "fonts", "icons", "images", "assets"));
 
 gulp.task("default", gulp.series("build", "watch"));
