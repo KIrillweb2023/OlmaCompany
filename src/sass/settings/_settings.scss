@@ -4,17 +4,23 @@
     font-family: "Gilroy", sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-color: #020E20;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
 
 a {
     text-decoration: none;  
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
 button, input, textarea {
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 ul, ol {

@@ -101,7 +101,8 @@ gulp.task("styles", function () {
 
 gulp.task("html", function () {
   return gulp.src("src/*.html")
-        .pipe(gulp.dest(dist));
+        .pipe(gulp.dest(dist))
+        .pipe(browsersync.stream());
 });
 
 gulp.task("fonts", function () {
@@ -146,7 +147,7 @@ gulp.task("watch", function () {
     notify: true,
   });
   
-  gulp.watch("src/*.html", gulp.series("html"));
+  gulp.watch("src/*.html", gulp.series("html")).on("change", browsersync.reload);
   gulp.watch("./src/js/**/*.js", gulp.series("build-js"));
   gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.series("styles"));
   gulp.watch("src/fonts/**/*", gulp.series("fonts"));

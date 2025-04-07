@@ -7,12 +7,415 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
     <body>
+        <header class="header">
+            <div class="container">
+               <div class="header-wrapper">
+                <div class="header__logo">
+                    <img src="./assets/icons/components/Header/Logo.svg" alt="" class="header__logo-icon">
+                    <p class="header__logo-text">На вершину к цели!</p>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="" class="header__item-link">Начало</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">Прайс-лист</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">О нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link"> Преимущества</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">Свяжитесь с нами</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__accaunt">
+                    <img src="./assets/icons/components/Header/UserLogin.svg" alt="" class="header__accaunt-icon">
+                    <p class="header__accaunt-text">Войти</p>
+                </button>
+            </div>
+           
+        </header>
         
         <main class="welcome">
             <div class="container">
+                <div class="welcome-wrapper">
+                    <div class="welcome__text">
+                        <h1 class="welcome__title">
+                            Мы молодая стартап-команда
+                        </h1>
+                        <h2 class="welcome__subtitle">
+                            Создадим для вас идеальный продукт
+                        </h2>
+                        <p class="welcome__descr">
+                            Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
+                        </p>
+                        <div class="welcome__btns">
+                            <button class="welcome__btns-item consult">Проконсультироваться</button>
+                            <button class="welcome__btns-item breakins">Оставить заявку</button>
+                        </div>
+                    </div>
+                    <div class="welcome__chart">
+                        <div class="welcome__chart-item">
+                            <h3 class="welcome__chart-title">Рабочий график</h3>
 
+                            <p class="welcome__chart-sigment">Часовой отрезок:</p>
+                            <h3 class="welcome__chart-time">09:00 - 20:00ч</h3>
+                        </div>
+
+                        <div class="welcome__chart-item">
+                            <h3 class="welcome__chart-title">График выходных</h3>
+
+                            <p class="welcome__chart-sigment">Часовой отрезок:</p>
+                            <h3 class="welcome__chart-time">12:00 - 22:00ч</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-down-arrows">
+                    <svg class="arrow arrow-1" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="arrow arrow-2" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="arrow arrow-3" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
             </div>
         </main>
+
+        <section class="price">
+            <div class="container">
+                <h3 class="price__title">Доступные тарифные планы</h3>
+
+                <div class="price-container">
+                    <div class="price-slides">
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                        <div class="price-slide">
+                            <div class="price-slide__information">
+                                <div class="price-slide__header">
+                                    <div class="price-slide__header-top">
+                                        <div class="price-slide__header-image">
+                                            <img src="./assets/icons/components/PriceCardIcons/BissinessCard.svg" alt="">
+                                        </div>
+                                        <div class="price-slide__header-info">
+                                            <h3 class="price-slide__header-title">Сайт-везитка</h3>
+                                            <h4 class="price-slide__header-subtitle">Стандарт</h4>
+                                        </div>
+                                    </div>
+                                    <p class="price-slide__header-descr">Это онлайн-визитка с контактами и ключевой информацией.</p>
+                                </div>
+
+                                <h4 class="price-slide__count">от: 3500р</h4>
+                               
+                                <div class="price-slide__list">
+                                    <h5 class="price-slide__list-title">В сайт входит:</h5>
+                                    <ul class="price-slide__list-items">
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                        <li class="price-slide__list-item">
+                                            <div class="price-slide__list-item-image">
+                                                <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/Check-none-active.svg" alt="check-arrow">
+                                            </div>
+                                            <p class="price-slide__list-item-text">Адаптивный дизайн</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="price-slide__btn">Заказать сейчас</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="price-pagination"></div>
+
+                <div class="price-navigation">
+                    <button class="price-navigation-prev btn-nav">
+                        <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/arrow-slider-left.svg" alt="arrow-left">
+                    </button>
+                    <button class="price-navigation-next btn-nav">
+                        <img src="./assets/icons/components/PriceCardIcons/ArrowPriceCard/arrow-slider-right.svg" alt="arrow-right">
+                    </button>
+                </div>
+            </div>
+        </section>
         <script src="./js/script.js"></script>
     </body>
 </html>
