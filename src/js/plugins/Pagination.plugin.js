@@ -20,7 +20,7 @@ export default class Pagination {
 
             for (let i = 0; i < paginationNumbers; i++) {
                 const paginationItem = document.createElement("li");
-                paginationItem.classList.add(`price-pagination-item`);
+                paginationItem.classList.add(`${this.SlimeInit.sliderClass.slice(1)}-pagination-item`);
                 paginationItem.addEventListener("click", () => this.getIndexSlider(i));
                 paginationContainer.appendChild(paginationItem);
             }

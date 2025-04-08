@@ -1,0 +1,57 @@
+.price {
+    &-slide {
+       &-active {
+        &__information {
+            background-color: #4A3AFF;
+        }
+        &__header {
+            &-image {
+                background-color: #fff;
+            }
+           
+            &-title {
+                font-size: 18px;
+                font-weight: 400;
+                color: #e4e4e4;
+            }
+            &-subtitle {
+                color: #fff;
+            }
+         
+            &-descr {
+                color: #ffffff;
+            }
+        } 
+        &__count {
+           color: #ffffff;
+        }
+
+        &__list {
+            &-title {
+                color: #ffffff;
+            }
+            &-item {
+             
+                &-image {
+                  
+                    background-color: #ffffff;
+                  
+                }
+                &-text {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        &__btn {
+            background-color: #ffffff;
+            color: #4b4b4b;
+            &:hover {
+               
+                color: #ffffff;
+                border: 1px solid #ffffff;
+            }
+        }
+        }
+    }
+}

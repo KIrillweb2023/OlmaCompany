@@ -18,7 +18,7 @@
     }
 
     &-slide {
-        width: 33%;
+        // width: 33%;
         padding: 0 15px;
         &__information {
             background-color: #fff;
@@ -118,6 +118,10 @@
                 color: #4A3AFF;
                 border: 1px solid #4a3aff;
             }
+        }
+
+        &__active {
+            
         }
     }
 
