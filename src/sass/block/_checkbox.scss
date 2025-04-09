@@ -1,0 +1,86 @@
+
+.submit__container-form-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стили для кастомного чекбокса */
+.submit__container-form-policyText {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    user-select: none;
+    transition: color 0.3s ease;
+    a {
+        padding-left: 8px;
+        color: #6196FF;
+        text-decoration: underline;
+    }
+}
+
+/* Псевдоэлемент для кастомного чекбокса */
+.submit__container-form-policyText::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border: 2px solid #4A3AFF;
+    border-radius: 4px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Галочка (скрыта по умолчанию) */
+.submit__container-form-policyText::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Состояние checked */
+.submit__container-form-checkbox:checked + .submit__container-form-policyText::before {
+    background-color: #4A3AFF;
+    border-color: #4A3AFF;
+}
+
+.submit__container-form-checkbox:checked + .submit__container-form-policyText::after {
+    opacity: 1;
+}
+
+/* Фокус состояние */
+.submit__container-form-checkbox:focus + .submit__container-form-policyText::before {
+    box-shadow: 0 0 0 3px rgba(74, 58, 255, 0.2);
+}
+
+/* Ховер эффект */
+.submit__container-form-policyText:hover::before {
+    border-color: #6a5bff;
+}
+
+/* Отключенное состояние */
+.submit__container-form-checkbox:disabled + .submit__container-form-policyText {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.submit__container-form-checkbox:disabled + .submit__container-form-policyText::before {
+    background: #eee;
+    border-color: #ddd;
+}

@@ -6,6 +6,7 @@ import Pagination from "./plugins/Pagination.plugin";
 import Breakpoint from "./core/Breakpoint.core";
 
 import AboutText from "./modules/AboutText";
+import TabsFunction from "./modules/Tabs";
 
 
 class SlimeInit {
@@ -95,34 +96,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
             }
         ]
     });
-    const AdventagesSectionSlider = new SlimeInit({
-        sliderClass: ".adventages",
-        navigation: {
-            nextSlideBtn: ".adventages-navigation-next",
-            prevSlideBtn: ".adventages-navigation-prev"
-        },
-        previewSlides: 3,
-        speedSlider: 0.6,
-        previewScrollSlide: 1,
-        pagination: true,
-        breakpoints: [
-            {
-                breakpointSize: 1200,
-                previewScrollSlide: 1,
-                previewSlides: 1
-            },
-            {
-                breakpointSize: 768,
-                previewScrollSlide: 1,
-                previewSlides: 2
-            },
-            {
-                breakpointSize: 567,
-                previewScrollSlide: 1,
-                previewSlides: 1
-            }
-        ]
-    });
     const ReviewSectionSlider = new SlimeInit({
         sliderClass: ".reviews",
         navigation: {
@@ -153,9 +126,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     });
 
     PriceSectionSlider.InitSlider(); 
-    AdventagesSectionSlider.InitSlider(); 
     ReviewSectionSlider.InitSlider(); 
 
     AboutText()
-    
+    TabsFunction()
 })
