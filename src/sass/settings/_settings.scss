@@ -30,3 +30,11 @@ ul, ol {
 *::after, *::before {
     box-sizing: border-box;
 }
+
+#userPhone {
+    font-family: monospace; /* Для равномерного отображения символов */
+}
+
+#userPhone::placeholder {
+    color: #999; /* Цвет для подчеркиваний */
+}

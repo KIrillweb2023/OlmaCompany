@@ -7,6 +7,7 @@ import Breakpoint from "./core/Breakpoint.core";
 
 import AboutText from "./modules/AboutText";
 import TabsFunction from "./modules/Tabs";
+import MaskaText from "./modules/MaskaText";
 
 
 class SlimeInit {
@@ -130,4 +131,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     AboutText()
     TabsFunction()
+    MaskaText()
 })

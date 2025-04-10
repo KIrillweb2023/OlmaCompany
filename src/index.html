@@ -1,85 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Olma Web Company - создание профессиональных сайтов и веб-приложений для бизнеса. Разработка адаптивных сайтов, интернет-магазинов и корпоративных решений.">
+    <meta name="keywords" content="создание сайтов, веб-разработка, разработка сайтов, сайт под ключ, интернет-магазин, корпоративный сайт">
+    <meta name="author" content="Olma Web Company">
+    <meta property="og:title" content="Olma Web Company - профессиональная веб-разработка">
+    <meta property="og:description" content="Создадим для вас идеальный веб-продукт для продвижения вашего бизнеса в интернете">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olmawebcompany.com">
+    <meta property="og:image" content="https://olmawebcompany.com/assets/images/og-image.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://olmawebcompany.com">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <title>Olma Web Company - Профессиональная разработка сайтов и веб-приложений</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
     <body>
-        <header class="header">
+        <header class="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
             <div class="container">
                <div class="header-wrapper">
-                <div class="header__logo">
-                    <img src="./assets/icons/components/Header/Logo.svg" alt="" class="header__logo-icon">
-                    <p class="header__logo-text">На вершину к цели!</p>
+                <div class="header__logo" itemscope itemtype="https://schema.org/Organization">
+                    <a href="/" itemprop="url" aria-label="Главная страница">
+                        <img src="./assets/icons/components/Header/Logo.svg" alt="Логотип компании" class="header__logo-icon" itemprop="logo" width="24" height="24">
+                    </a>
+                    <p class="header__logo-text" itemprop="name">На вершину к цели!</p>
                 </div>
-                <nav class="header__nav">
+                <nav class="header__nav" role="navigation" aria-label="Основное меню">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="" class="header__item-link">Начало</a>
+                            <a href="/" class="header__item-link" itemprop="url" aria-current="page">Начало</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__item-link">Прайс-лист</a>
+                            <a href="/" class="header__item-link" itemprop="url">Прайс-лист</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__item-link">О нас</a>
+                            <a href="/" class="header__item-link" itemprop="url">О нас</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__item-link"> Преимущества</a>
+                            <a href="/" class="header__item-link" itemprop="url">Преимущества</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__item-link">Отзывы</a>
+                            <a href="/" class="header__item-link" itemprop="url">Отзывы</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__item-link">Свяжитесь с нами</a>
+                            <a href="/" class="header__item-link" itemprop="url">Свяжитесь с нами</a>
                         </li>
                     </ul>
                 </nav>
-                <button class="header__accaunt">
-                    <img src="./assets/icons/components/Header/UserLogin.svg" alt="" class="header__accaunt-icon">
+                <button class="header__accaunt" aria-label="Личный кабинет" aria-expanded="false" aria-controls="login-modal">
+                    <img src="./assets/icons/components/Header/UserLogin.svg" alt="Иконка входа в личный кабинет" class="header__accaunt-icon" width="24" height="24">
                     <p class="header__accaunt-text">Войти</p>
                 </button>
             </div>
            
         </header>
         
-        <main class="welcome">
+        <main class="welcome" role="main" itemscope itemtype="https://schema.org/WebPageElement">
             <div class="container">
                 <div class="welcome-wrapper">
-                    <div class="welcome__text">
-                        <h1 class="welcome__title">
+                    <div class="welcome__text" itemprop="mainEntity" itemscope itemtype="https://schema.org/WebContent">
+                        <h1 class="welcome__title" itemprop="headline">
                             Мы молодая стартап-команда
                         </h1>
-                        <h2 class="welcome__subtitle">
+                        <h2 class="welcome__subtitle" itemprop="alternativeHeadline">
                             Создадим для вас идеальный продукт
                         </h2>
-                        <p class="welcome__descr">
+                        <p class="welcome__descr" itemprop="description">
                             Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
                         </p>
                         <div class="welcome__btns">
-                            <button class="welcome__btns-item consult">Проконсультироваться</button>
-                            <button class="welcome__btns-item breakins">Оставить заявку</button>
+                            <button class="welcome__btns-item consult" aria-label="Получить консультацию"  data-modal="consultation" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">Проконсультироваться</button>
+                            <button class="welcome__btns-item breakins" aria-label="Оставить заявку на разработку"  data-modal="application" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">Оставить заявку</button>
                         </div>
                     </div>
-                    <div class="welcome__chart">
-                        <div class="welcome__chart-item">
-                            <h3 class="welcome__chart-title">Рабочий график</h3>
+                    <div class="welcome__chart" aria-label="График работы">
+                        <div class="welcome__chart-item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                            <h3 class="welcome__chart-title" itemprop="name">Рабочий график</h3>
 
                             <p class="welcome__chart-sigment">Часовой отрезок:</p>
-                            <h3 class="welcome__chart-time">09:00 - 20:00ч</h3>
+                            <h3 class="welcome__chart-time" itemprop="opens" content="09:00" itemprop="closes" content="20:00">09:00 - 20:00ч</h3>
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Monday" />
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Tuesday" />
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Wednesday" />
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Thursday" />
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Friday" />
                         </div>
 
-                        <div class="welcome__chart-item">
-                            <h3 class="welcome__chart-title">График выходных</h3>
+                        <div class="welcome__chart-item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                            <h3 class="welcome__chart-title" itemprop="name">График выходных</h3>
 
                             <p class="welcome__chart-sigment">Часовой отрезок:</p>
-                            <h3 class="welcome__chart-time">12:00 - 22:00ч</h3>
+                            <h3 class="welcome__chart-time" itemprop="opens" content="12:00" itemprop="closes" content="22:00">12:00 - 22:00ч</h3>
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Saturday" />
+                            <meta itemprop="dayOfWeek" content="https://schema.org/Sunday" />
                         </div>
                     </div>
                 </div>
 
-                <div class="scroll-down-arrows">
+                <div class="scroll-down-arrows" aria-hidden="true">
                     <svg class="arrow arrow-1" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -417,138 +441,145 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/AboutPage">
             <div class="container">
                 <div class="about-wrapper">
-                    <div class="about-info">
-                        <h3 class="about__title">
-                            О нас
-                        </h3>
-                        <div class="about-text">
+                    <div class="about-info" itemprop="mainEntity" itemscope itemtype="https://schema.org/Organization">
+                        <h3 id="about-heading" class="about__title" itemprop="name">О нас</h3>
+                        <div class="about-text" itemprop="description">
                             <p class="about-text__descr">
                               Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
                             </p>
-                            <div class="about-text__hidden">
+                            <div class="about-text__hidden" aria-hidden="true">
                               <p class="about-text__descr">
                                 Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
                               </p>
                             </div>
                           </div>
-                          <p class="about__details">Подробнее</p>
+                          <button class="about__details" aria-expanded="false" aria-controls="hidden-about-text" aria-label="Читать подробнее о компании">Подробнее</button>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="adventages">
-            <div class="adventages-moon">
-                <img src="./assets/icons/components/Qualites/attribute-icon/moonlight.svg" alt="moon">
+        <section class="adventages" aria-labelledby="advantages-heading" itemscope itemtype="https://schema.org/ItemList">
+            <div class="adventages-moon" aria-hidden="true">
+                <img src="./assets/icons/components/Qualites/attribute-icon/moonlight.svg" alt="Луна-иконка" role="presentation">
             </div>
             <div class="container">
-                <h3 class="adventages__title">
+                <h3 id="advantages-heading" class="adventages__title" itemprop="name">
                     Преимущества работы с нами
                 </h3>
 
               
                 <div class="adventages-wrapper">
-                    <div class="adventages__text">
-                        <h3 class="adventages__text-title">Преимущества работы с нами</h3>
+                    <div class="adventages__text" itemprop="description">
+                        <h3 class="adventages__text-title" aria-hidden="true">Преимущества работы с нами</h3>
                         <p class="adventages__text-descr">
                             Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
                         </p>
-                        <div class="adventages__text-image">
-                            <img src="./assets/icons/components/Qualites/attribute-icon/stars-icon.svg" alt="">
+                        <div class="adventages__text-image" aria-hidden="true">
+                            <img src="./assets/icons/components/Qualites/attribute-icon/stars-icon.svg" alt="Иконка-звезды" role="presentation">
                         </div>
                     </div>
                     <div class="adventages__container">
-                        <ul class="adventages__list adventages__list-active">
-                            <li class="adventages__item">
+                        <ul class="adventages__list adventages__list-active" role="list" aria-label="Список преимуществ 1">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
+                                <meta itemprop="position" content="1" />
                             </li>
-                            <li class="adventages__item">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
+                                <meta itemprop="position" content="2" />
                             </li>
-                            <li class="adventages__item">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
-                            </li>
-                        </ul>
-                        <ul class="adventages__list">
-                            <li class="adventages__item">
-                                <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
-                                </div>
-                                <p class="adventages__item-text">
-                                    Мы используем только новые технологии для разработки вашего интернет продукты
-                                </p>
-                            </li>
-                            <li class="adventages__item">
-                                <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/node-icon.svg" alt="technologi-icon">
-                                </div>
-                                <p class="adventages__item-text">
-                                    Мы используем только новые технологии для разработки вашего интернет продукты
-                                </p>
-                            </li>
-                            <li class="adventages__item">
-                                <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
-                                </div>
-                                <p class="adventages__item-text">
-                                    Мы используем только новые технологии для разработки вашего интернет продукты
-                                </p>
+                                <meta itemprop="position" content="3" />
                             </li>
                         </ul>
-                        <ul class="adventages__list">
-                            <li class="adventages__item">
+                        <ul class="adventages__list" role="list" aria-label="Список преимуществ 2">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
+                                <meta itemprop="position" content="1" />
                             </li>
-                            <li class="adventages__item">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/React-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
+                                <meta itemprop="position" content="2" />
                             </li>
-                            <li class="adventages__item">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
                                 <div class="adventages__item-block">
-                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="technologi-icon">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
                                 </div>
-                                <p class="adventages__item-text">
+                                <p class="adventages__item-text" itemprop="description">
                                     Мы используем только новые технологии для разработки вашего интернет продукты
                                 </p>
+                                <meta itemprop="position" content="3" />
+                            </li>
+                        </ul>
+                        <ul class="adventages__list" role="list" aria-label="Список преимуществ 3">
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
+                                <div class="adventages__item-block">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
+                                </div>
+                                <p class="adventages__item-text" itemprop="description">
+                                    Мы используем только новые технологии для разработки вашего интернет продукты
+                                </p>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
+                                <div class="adventages__item-block">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
+                                </div>
+                                <p class="adventages__item-text" itemprop="description">
+                                    Мы используем только новые технологии для разработки вашего интернет продукты
+                                </p>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                            <li class="adventages__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" role="listitem">
+                                <div class="adventages__item-block">
+                                    <img class="adventages__item-block-icon" src="./assets/icons/components/Qualites/nestjs-icon.svg" alt="Иконка NestJS" itemprop="image" width="50" height="50">
+                                </div>
+                                <p class="adventages__item-text" itemprop="description">
+                                    Мы используем только новые технологии для разработки вашего интернет продукты
+                                </p>
+                                <meta itemprop="position" content="3" />
                             </li>
                         </ul>
 
-                        <div class="adventages__container-pagination">
-                            <span class="adventages__container-pagination-item adventages__container-pagination-item-active"></span>
-                            <span class="adventages__container-pagination-item"></span>
-                            <span class="adventages__container-pagination-item"></span>
+                        <div class="adventages__container-pagination" role="tablist" aria-label="Навигация по преимуществам">
+                            <span class="adventages__container-pagination-item adventages__container-pagination-item-active" role="tab" aria-controls="advantages-list-1" id="tab-1"></span>
+                            <span class="adventages__container-pagination-item" role="tab" aria-controls="advantages-list-2" id="tab-2"></span>
+                            <span class="adventages__container-pagination-item" role="tab" aria-controls="advantages-list-3" id="tab-3"></span>
                         </div>
 
-                        <div class="adventages__container-image">
-                            <img src="./assets/icons/components/Qualites/attribute-icon/stars-icon.svg" alt="">
+                        <div class="adventages__container-image" aria-hidden="true">
+                            <img src="./assets/icons/components/Qualites/attribute-icon/stars-icon.svg" alt="Иконка-звезды" role="presentation">
                         </div>
                     </div>
                 </div>
@@ -747,19 +778,28 @@
             </div>
         </section>
 
-        <section class="submit">
+        <section class="submit" aria-labelledby="contact-heading" itemscope itemtype="https://schema.org/ContactPage">
             <div class="container">
                 <div class="submit-wrapper">
 
                     <div class="submit__text">
-                        <h3 class="submit__text-title">Свяжитесь с нами</h3>
-                        <p class="submit__text-descr">
+                        <h3 id="contact-heading" class="submit__text-title" itemprop="headline">Свяжитесь с нами</h3>
+                        <p class="submit__text-descr" itemprop="description">
                             Наша поддержка ответит на любой ваш вопрос в любое время и поможет подобрать нужный тариф
                         </p>
                        
-                        <div class="submit__text-block">
+                        <div class="submit__text-block" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
                             <h3 class="submit__text-subtitle">Принимаем заявки ежедневно с:</h3>
                             <div class="submit__text-time">
+                                <meta itemprop="opens" content="09:00" />
+                                <meta itemprop="closes" content="20:00" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Monday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Tuesday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Wednesday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Thursday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Friday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Saturday" />
+                                <meta itemprop="dayOfWeek" content="https://schema.org/Sunday" />
                                 <span class="submit__text-time-item submit__text-time-clock">09</span>
                                 <span class="submit__text-time-item submit__text-time-dott">:</span>
                                 <span class="submit__text-time-item submit__text-time-clock">00</span>
@@ -771,37 +811,78 @@
                         </div>
                     </div>
                     <div class="submit__container">
-                        <div class="submit__container-blur blur-first">
-                            <img src="./img/components/SubmitOur/blur-block-1.png" alt="">
+                        <div class="submit__container-blur blur-first" aria-hidden="true">
+                            <img src="./img/components/SubmitOur/blur-block-1.png" alt="Тень" role="presentation">
                         </div>
-                        <div class="submit__container-blur blur-second">
-                            <img src="./img/components/SubmitOur/blur-block-2.png" alt="">
+                        <div class="submit__container-blur blur-second" aria-hidden="true">
+                            <img src="./img/components/SubmitOur/blur-block-2.png" alt="Тень" role="presentation">
                         </div>
-                        <form action="" class="submit__container-form">
+                        <form action="#" class="submit__container-form" method="POST" itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactPoint">
                             <h3 class="submit__container-form-title">
                                 Оставьте контактные данные, мы перезвоним и обсудим ваши задачи 
                             </h3>
-                            <label for="" class="submit__container-form-label">
-                                <input placeholder="Ваше имя" type="text" class="submit__container-form-input">
+                            
+                            <!-- Поле имени -->
+                            <label for="userName" class="submit__container-form-label">
+                                <input id="userName" 
+                                       name="name" 
+                                       placeholder="Ваше имя" 
+                                       type="text" 
+                                       class="submit__container-form-input" 
+                                       aria-required="true" 
+                                       required 
+                                       itemprop="name"
+                                       oninput="window.sanitizeInput(this)">
                             </label>
-                            <label for="" class="submit__container-form-label">
-                                <input placeholder="+7 (999) 999-99-99" type="text" class="submit__container-form-input">
+                            
+                            <!-- Поле телефона с маской -->
+                            <label for="userPhone" class="submit__container-form-label">
+                                <input id="userPhone" 
+                                       name="phone" 
+                                       placeholder="+7 (___) ___-__-__" 
+                                       type="tel" 
+                                       class="submit__container-form-input" 
+                                       aria-required="true" 
+                                       required 
+                                       itemprop="telephone"
+                                       maxlength="18"
+                                       oninput="window.formatPhoneNumber(this)"
+                                       onkeydown="window.sanitizeInput(this)">
                             </label>
-                            <label for="" class="submit__container-form-label">
-                                <input placeholder="example@email.com" type="text" class="submit__container-form-input">
+                            
+                            <!-- Поле email -->
+                            <label for="userEmail" class="submit__container-form-label">
+                                <input id="userEmail" 
+                                       name="email"
+                                       placeholder="example@email.com" 
+                                       type="email" 
+                                       class="submit__container-form-input" 
+                                       aria-required="true" 
+                                       required 
+                                       itemprop="email"
+                                       oninput="window.sanitizeInput(this)">
                             </label>
                          
                             <div class="submit__container-form-policy">
-                                <!-- <input type="checkbox" class="submit__container-form-checkbox"> -->
-
-                                <input type="checkbox" id="customCheckbox" class="submit__container-form-checkbox">
-                                <label for="customCheckbox" class="submit__container-form-policyText">Я согласен с <a href="#">политикой конфиденциальности</a></label>
-                                <!-- <p class="submit__container-form-policyText"> 
-                                   
-                                    <a href="#">политикой конфиденциальности</a>
-                                </p> -->
+                                <input type="checkbox" 
+                                       id="customCheckbox" 
+                                       class="submit__container-form-checkbox"
+                                       aria-required="true"
+                                       required>
+                                <label for="customCheckbox" class="submit__container-form-policyText">
+                                    Я согласен с <a href="/privacy-policy" itemprop="termsOfService">политикой конфиденциальности</a>
+                                </label>
                             </div>
-                            <button class="submit__container-form-button">Отправить заявку</button>
+                            
+                            <button type="submit" 
+                                    class="submit__container-form-button"
+                                    aria-label="Отправить заявку на консультацию"
+                                    itemprop="action">
+                                Отправить заявку
+                            </button>
+                            
+                            <meta itemprop="contactType" content="customer service" />
+                            <meta itemprop="url" content="https://вашсайт.ru/contacts" />
                         </form>
                     </div>
                 </div>
@@ -809,82 +890,70 @@
         </section>
 
 
-        <footer class="footer">
+        <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
             <div class="container">
                 <div class="footer-wrapper">
-                    <div class="footer-item">
-                        <h3 class="footer-item-company">
-                            Olma Web Company
-                        </h3>
-                        <p class="footer-item-subtitle">
-                            Современная платформа по созданию квалифиционных продуктов
+                    <div class="footer-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <h3 class="footer-item-company" itemprop="name">Olma Web Company</h3>
+                        <p class="footer-item-subtitle" itemprop="description">
+                            Современная платформа по созданию квалифицированных продуктов
                         </p>
-                        <div class="footer-item-line"></div>
+                        <div class="footer-item-line" aria-hidden="true"></div>
 
-                        <ul class="footer-item-list">
-                            <li class="footer-item-li">
-                                <div class="footer-item-block">
-                                    <img src="./assets/icons/components/FooterSocial/Telegramm.svg" alt="social" class="footer-item-icon">
-                                </div>
-                            </li>
-                            <li class="footer-item-li">
-                                <div class="footer-item-block">
-                                    <img src="./assets/icons/components/FooterSocial/VKontakte.svg" alt="social" class="footer-item-icon">
-                                </div>
-                            </li>
-                            <li class="footer-item-li">
-                                <div class="footer-item-block">
-                                    <img src="./assets/icons/components/FooterSocial/WhatApp.svg" alt="social" class="footer-item-icon">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-item">
-                        <h3 class="footer-item_title">
-                            Навигация
-                        </h3>
-                        <ul class="footer-item-nav">
-                            <li class="footer-item-nav_li">
-                                <a href="#" class="footer-item-nav-link">
-                                    Прайс-лист
+                        <ul class="footer-item-list" role="list" aria-label="Социальные сети">
+                            <li class="footer-item-li" role="listitem">
+                                <a href="#" class="footer-item-block" aria-label="Telegram" itemprop="sameAs">
+                                    <img src="./assets/icons/components/FooterSocial/Telegramm.svg" alt="Telegram" class="footer-item-icon" width="20" height="20">
                                 </a>
                             </li>
-                            <li class="footer-item-nav_li">
-                                <a href="#" class="footer-item-nav-link">
-                                    О нас
+                            <li class="footer-item-li" role="listitem">
+                                <a href="#" class="footer-item-block" aria-label="ВКонтакте" itemprop="sameAs">
+                                    <img src="./assets/icons/components/FooterSocial/VKontakte.svg" alt="ВКонтакте" class="footer-item-icon" width="20" height="20">
                                 </a>
                             </li>
-                            <li class="footer-item-nav_li">
-                                <a href="#" class="footer-item-nav-link">
-                                    Наши преимущества
-                                </a>
-                            </li>
-                            <li class="footer-item-nav_li">
-                                <a href="" class="footer-item-nav-link">
-                                    Отзывы
-                                </a>
-                            </li>
-                            <li class="footer-item-nav_li">
-                                <a href="#" class="footer-item-nav-link">
-                                    Связь с нами
+                            <li class="footer-item-li" role="listitem">
+                                <a href="#" class="footer-item-block" aria-label="WhatsApp" itemprop="sameAs">
+                                    <img src="./assets/icons/components/FooterSocial/WhatApp.svg" alt="WhatsApp"  class="footer-item-icon" width="20" height="20">
                                 </a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="footer-item">
+                        <h3 class="footer-item_title">Навигация</h3>
+                        <nav aria-label="Дополнительная навигация">
+                            <ul class="footer-item-nav" role="list">
+                                <li class="footer-item-nav_li" role="listitem">
+                                    <a href="#" class="footer-item-nav-link" itemprop="url">Прайс-лист</a>
+                                </li>
+                                <li class="footer-item-nav_li" role="listitem">
+                                    <a href="#" class="footer-item-nav-link" itemprop="url">О нас</a>
+                                </li>
+                                <li class="footer-item-nav_li" role="listitem">
+                                    <a href="#" class="footer-item-nav-link" itemprop="url">Наши преимущества</a>
+                                </li>
+                                <li class="footer-item-nav_li" role="listitem">
+                                    <a href="#" class="footer-item-nav-link" itemprop="url">Отзывы</a>
+                                </li>
+                                <li class="footer-item-nav_li" role="listitem">
+                                    <a href="#" class="footer-item-nav-link" itemprop="url">Связь с нами</a>
+                                </li>
+                            </ul>
+                        </nav>      
+                    </div>
+
+                    <div class="footer-item" itemprop="foundingDate" content="2017-06-07">
                         <h3 class="footer-item_title">
                             Реквизиты
                         </h3>
-                        <p class="footer-item_requsites">
-                            <span>Р/cчет 40702810610000508370 в АО «Тинькофф Банк»</span>
-                            <span>БИК 044525974</span>
+                        <div class="footer-item_requsites" itemprop="taxID" content="9701078611">
+                            <span itemprop="bankAccount">Р/cчет 40702810610000508370 в АО «Тинькофф Банк»</span>
+                            <span itemprop="bic">БИК 044525974</span>
                             <span>К/сч 30101810145250000974</span>
-                            <span>ОГРН 1177746566140 от 07.06.2017</span>
-                            <span>ИНН 9701078611</span>
-                            <span>КПП 773101001</span>
-                        </p>
+                            <span itemprop="identifier">ОГРН 1177746566140</span>
+                            <span itemprop="taxID">ИНН 9701078611</span>
+                            <span itemprop="vatID">КПП 773101001</span>
+                        </div>
                     </div>
 
                     <div class="footer-item">
@@ -895,26 +964,29 @@
                         <h4 class="footer-item_subtitle">
                             Юридический адрес
                         </h4>
-                        <p class="footer-item_descr">
-                            452410, Республика Башкортостан, г. Уфа, ул. Строителей, дом 27, корпус 1, этаж 3.
+                        <p class="footer-item_descr" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="postalCode">452410</span>, 
+                            <span itemprop="addressRegion">Республика Башкортостан</span>, 
+                            <span itemprop="addressLocality">г. Уфа</span>, 
+                            <span itemprop="streetAddress">ул. Строителей, дом 27, корпус 1, этаж 3</span>
                         </p>
                         <h4 class="footer-item_subtitle">
                             Контактный центр
                         </h4>
                         <p class="footer-item_descr">
-                            +7 (967) 731-07-46
+                            <a href="tel:+79677310746" itemprop="telephone">+7 (967) 731-07-46</a>
                         </p>
                         <h4 class="footer-item_subtitle">
                             Электонная почта
                         </h4>
                         <p class="footer-item_descr">
-                            olmacompany@gmail.com
+                            <a href="mailto:olmacompany@gmail.com" itemprop="email">olmacompany@gmail.com</a>
                         </p>
                     </div>
                 </div>
 
                 <div class="footer__subinfo">
-                    <p class="footer__subinfo-text">
+                    <p class="footer__subinfo-text" itemprop="copyrightNotice">
                         Любое использование материалов с данного сайта допускается не иначе как с письменного разрешения его правообладателя — 781714316555 ИНН/ОГРНИП номер от 317784700113455. Использование материала с сайта и нарушение авторских и смежных прав правообладателя наказывается в соответствии со ст. 146 УК РФ. Вся информация, предоставленная на сайте, ни при каких условиях не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ.
                     </p>
                 </div>
