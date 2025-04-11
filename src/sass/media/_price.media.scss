@@ -1,0 +1,157 @@
+@media (max-width: 1400px) {
+    .price {
+        &-slide{
+            padding: 0 5px;
+            &__information {
+                padding: 40px 25px;
+            }
+        }
+        &-navigation {
+            position: relative;
+            .btn-nav {
+             
+                bottom: -18px;
+               top: auto;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            &-prev {
+                // position: relative;
+                left: 37%;
+            }
+            &-next {
+                // position: relative;
+                right: 37%;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .price {
+        &-navigation {
+            &-prev {
+                // position: relative;
+                left: 30%;
+            }
+            &-next {
+                // position: relative;
+                right: 30%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .price {
+        &-slide{
+            &__header{
+                &-descr{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-navigation {
+            &-prev {
+                // position: relative;
+                left: 27%;
+            }
+            &-next {
+                // position: relative;
+                right: 27%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .price {
+        &-navigation {
+            &-prev {
+                // position: relative;
+                left: 7%;
+            }
+            &-next {
+                // position: relative;
+                right: 7%;
+            }
+        }
+        &-pagination {
+            &-item {
+              width: 40px;
+              height: 6px;
+            }
+        }
+    }
+}
+@media (max-width: 567px) {
+    .price {
+        &__title {
+            font-size: 24px;
+        }
+        &-navigation {
+            &-prev {
+                // position: relative;
+                left: 3%;
+            }
+            &-next {
+                // position: relative;
+                right: 3%;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .price {
+        &__title {
+            font-size: 24px;
+        }
+        &-slide {
+            &__header {
+                &-title {
+                    font-size: 16px;
+                }
+                &-subtitle {
+                    font-size: 20px;
+                }
+                &-descr {
+                    font-size: 16px;
+                }
+            }
+            &__count {
+                font-size: 22px;
+            }
+            &__list {
+                &-title {
+                    font-size: 18px;
+                }
+                &-item {
+                    &-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &__btn {
+                font-size: 16px;
+            }
+        }
+        &-navigation {
+            &-prev {
+                // position: relative;
+                left: 3%;
+            }
+            &-next {
+                // position: relative;
+                right: 3%;
+            }
+        }
+
+        &-pagination {
+            &-item {
+              width: 10px;
+              height: 10px;
+            }
+        }
+    }
+}

@@ -57,9 +57,59 @@
                     <img src="./assets/icons/components/Header/UserLogin.svg" alt="Иконка входа в личный кабинет" class="header__accaunt-icon" width="24" height="24">
                     <p class="header__accaunt-text">Войти</p>
                 </button>
+
+
+                <button class="header__hamburger">
+                    <svg class="header__hamburger-icon" width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="45" height="5" rx="2.5" fill="white"/>
+                        <rect y="16" width="45" height="5" rx="2.5" fill="white"/>
+                        <rect y="32" width="45" height="5" rx="2.5" fill="white"/>
+                    </svg>
+                </button>
             </div>
            
         </header>
+
+        <aside class="menu">
+            <button class="menu-close">
+                <img src="./assets/icons/components/CloseMenu/CloseMenuIcon.svg" alt="CloseMenu" width="30" height="30">
+            </button>
+            <div class="menu-wrapper">
+                <nav class="menu__nav" role="navigation" aria-label="Основное меню">
+                    <h3 class="">Навигация по сайту</h3>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url" aria-current="page">Начало</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url">Прайс-лист</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url">Преимущества</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__item-link" itemprop="url">Свяжитесь с нами</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="menu__accaunt" aria-label="Личный кабинет" aria-expanded="false" aria-controls="login-modal">
+                    <img src="./assets/icons/components/Header/UserLogin.svg" alt="Иконка входа в личный кабинет" class="menu__accaunt-icon" width="24" height="24">
+                    <p class="menu__accaunt-text">Войти</p>
+                </button>
+            </div>
+            <div class="menu-company">
+                <img src="./assets/icons/components/Logotypes/Authificate-logo-black/logo-black.svg" alt="Logotype-company" class="menu-company_icon">
+                <p class="menu-company_text">
+                    Olma Web Company
+                </p>
+            </div>
+        </aside>
         
         <main class="welcome" role="main" itemscope itemtype="https://schema.org/WebPageElement">
             <div class="container">
@@ -83,8 +133,10 @@
                         <div class="welcome__chart-item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
                             <h3 class="welcome__chart-title" itemprop="name">Рабочий график</h3>
 
-                            <p class="welcome__chart-sigment">Часовой отрезок:</p>
-                            <h3 class="welcome__chart-time" itemprop="opens" content="09:00" itemprop="closes" content="20:00">09:00 - 20:00ч</h3>
+                            <div class="welcome__chart-block">
+                                <p class="welcome__chart-sigment">Часовой отрезок:</p>
+                                <h3 class="welcome__chart-time" itemprop="opens" content="09:00" itemprop="closes" content="20:00">09:00 - 20:00ч</h3>
+                            </div>
                             <meta itemprop="dayOfWeek" content="https://schema.org/Monday" />
                             <meta itemprop="dayOfWeek" content="https://schema.org/Tuesday" />
                             <meta itemprop="dayOfWeek" content="https://schema.org/Wednesday" />
@@ -95,8 +147,10 @@
                         <div class="welcome__chart-item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
                             <h3 class="welcome__chart-title" itemprop="name">График выходных</h3>
 
-                            <p class="welcome__chart-sigment">Часовой отрезок:</p>
-                            <h3 class="welcome__chart-time" itemprop="opens" content="12:00" itemprop="closes" content="22:00">12:00 - 22:00ч</h3>
+                            <div class="welcome__chart-block">
+                                <p class="welcome__chart-sigment">Часовой отрезок:</p>
+                                <h3 class="welcome__chart-time" itemprop="opens" content="12:00" itemprop="closes" content="22:00">12:00 - 22:00ч</h3>
+                            </div>
                             <meta itemprop="dayOfWeek" content="https://schema.org/Saturday" />
                             <meta itemprop="dayOfWeek" content="https://schema.org/Sunday" />
                         </div>
@@ -440,7 +494,7 @@
                 </div>
             </div>
         </section>
-
+<!-- 
         <section class="about" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/AboutPage">
             <div class="container">
                 <div class="about-wrapper">
@@ -776,8 +830,8 @@
                 </div>
 
             </div>
-        </section>
-
+        </section> -->
+<!-- 
         <section class="submit" aria-labelledby="contact-heading" itemscope itemtype="https://schema.org/ContactPage">
             <div class="container">
                 <div class="submit-wrapper">
@@ -822,7 +876,7 @@
                                 Оставьте контактные данные, мы перезвоним и обсудим ваши задачи 
                             </h3>
                             
-                            <!-- Поле имени -->
+               
                             <label for="userName" class="submit__container-form-label">
                                 <input id="userName" 
                                        name="name" 
@@ -835,7 +889,7 @@
                                        oninput="window.sanitizeInput(this)">
                             </label>
                             
-                            <!-- Поле телефона с маской -->
+                         
                             <label for="userPhone" class="submit__container-form-label">
                                 <input id="userPhone" 
                                        name="phone" 
@@ -850,7 +904,7 @@
                                        onkeydown="window.sanitizeInput(this)">
                             </label>
                             
-                            <!-- Поле email -->
+                    
                             <label for="userEmail" class="submit__container-form-label">
                                 <input id="userEmail" 
                                        name="email"
@@ -887,10 +941,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
-        <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
+        <!-- <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
             <div class="container">
                 <div class="footer-wrapper">
                     <div class="footer-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -991,7 +1045,7 @@
                     </p>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <script src="./js/script.js"></script>
     </body>
 </html>

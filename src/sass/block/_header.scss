@@ -86,4 +86,19 @@
             border: 2px solid #ffffff96;
         }
     }
+    &__hamburger {
+        padding: 2px;
+        border-radius: 7px;
+        background-color: #ffffff00;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        height: 36px;
+        width: 36px;
+        display: none;
+        &-icon {
+            width: 20px;
+        }
+    }
 }

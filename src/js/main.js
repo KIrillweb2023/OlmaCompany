@@ -8,6 +8,7 @@ import Breakpoint from "./core/Breakpoint.core";
 import AboutText from "./modules/AboutText";
 import TabsFunction from "./modules/Tabs";
 import MaskaText from "./modules/MaskaText";
+import Hamburger from "./modules/Hamburger";
 
 
 class SlimeInit {
@@ -82,8 +83,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         breakpoints: [
             {
                 breakpointSize: 1200,
-                previewScrollSlide: 1,
-                previewSlides: 1
+                previewScrollSlide: 2,
+                previewSlides: 2
             },
             {
                 breakpointSize: 768,
@@ -97,39 +98,40 @@ document.addEventListener("DOMContentLoaded", (e) => {
             }
         ]
     });
-    const ReviewSectionSlider = new SlimeInit({
-        sliderClass: ".reviews",
-        navigation: {
-            nextSlideBtn: ".reviews-navigation-next",
-            prevSlideBtn: ".reviews-navigation-prev"
-        },
-        previewSlides: 3,
-        speedSlider: 0.6,
-        previewScrollSlide: 1,
-        pagination: true,
-        breakpoints: [
-            {
-                breakpointSize: 1200,
-                previewScrollSlide: 1,
-                previewSlides: 1
-            },
-            {
-                breakpointSize: 768,
-                previewScrollSlide: 1,
-                previewSlides: 2
-            },
-            {
-                breakpointSize: 567,
-                previewScrollSlide: 1,
-                previewSlides: 1
-            }
-        ]
-    });
+    // const ReviewSectionSlider = new SlimeInit({
+    //     sliderClass: ".reviews",
+    //     navigation: {
+    //         nextSlideBtn: ".reviews-navigation-next",
+    //         prevSlideBtn: ".reviews-navigation-prev"
+    //     },
+    //     previewSlides: 3,
+    //     speedSlider: 0.6,
+    //     previewScrollSlide: 1,
+    //     pagination: true,
+    //     breakpoints: [
+    //         {
+    //             breakpointSize: 1200,
+    //             previewScrollSlide: 1,
+    //             previewSlides: 1
+    //         },
+    //         {
+    //             breakpointSize: 768,
+    //             previewScrollSlide: 1,
+    //             previewSlides: 2
+    //         },
+    //         {
+    //             breakpointSize: 567,
+    //             previewScrollSlide: 1,
+    //             previewSlides: 1
+    //         }
+    //     ]
+    // });
 
     PriceSectionSlider.InitSlider(); 
-    ReviewSectionSlider.InitSlider(); 
+    // ReviewSectionSlider.InitSlider(); 
 
-    AboutText()
-    TabsFunction()
-    MaskaText()
+    // AboutText()
+    // TabsFunction()
+    // MaskaText()
+    Hamburger()
 })

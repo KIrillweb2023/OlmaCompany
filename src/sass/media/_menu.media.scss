@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .menu {
+        width: 50%;
+        left: -50%;
+        &-active{
+            left: 0;
+        }
+    }
+}
+@media (max-width: 567px) {
+    .menu {
+        width: 60%;
+        left: -60%;
+        &-active{
+            left: 0;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .menu {
+        width: 70%;
+        left: -70%;
+        &-active{
+            left: 0;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .menu {
+        width: 75%;
+        left: -75%;
+        &-active{
+            left: 0;
+        }
+    }
+}
