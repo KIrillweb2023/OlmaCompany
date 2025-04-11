@@ -45,9 +45,18 @@
 }
 @media (max-width: 992px) {
     .price {
+        &__title {
+            font-size: 32px;
+        }
         &-slide{
             &__header{
-                &-descr{
+                &-title {
+                    font-size: 18px;
+                }
+                &-subtitle {
+                    font-size: 22px;
+                }
+                &-descr {
                     font-size: 18px;
                 }
             }
@@ -67,6 +76,25 @@
 }
 @media (max-width: 768px) {
     .price {
+        &__title {
+            font-size: 30px;
+        }
+        &-slide {
+            &__header {
+                &-title {
+                    font-size: 18px;
+                }
+                &-subtitle {
+                    font-size: 22px;
+                }
+                &-descr {
+                    font-size: 18px;
+                }
+            }
+            &__count {
+                font-size: 24px;
+            }
+        }
         &-navigation {
             &-prev {
                 // position: relative;

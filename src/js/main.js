@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     PriceSectionSlider.InitSlider(); 
     // ReviewSectionSlider.InitSlider(); 
 
-    // AboutText()
+    AboutText()
     // TabsFunction()
     // MaskaText()
     Hamburger()
