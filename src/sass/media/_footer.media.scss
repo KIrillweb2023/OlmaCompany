@@ -38,13 +38,14 @@
                 padding-left: 5px;
                 &::after {
                     content: url('data:image/svg+xml;utf8,<svg width="11" height="23" viewBox="0 0 17 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4143 16.4142C17.1954 15.6332 17.1954 14.3668 16.4143 13.5858L3.68639 0.857864C2.90534 0.0768156 1.63901 0.0768156 0.857965 0.857864C0.0769157 1.63891 0.0769157 2.90524 0.857965 3.68629L12.1717 15L0.857965 26.3137C0.0769157 27.0948 0.0769157 28.3611 0.857965 29.1421C1.63901 29.9232 2.90534 29.9232 3.68639 29.1421L16.4143 16.4142ZM15 17H15.0001V13H15V17Z" fill="white"/></svg>');
-                    right: 5px;
-                    top: 10px;
+                    right: 10px;
+                    top: 0px;
                     transform: rotate(90deg);
-                    width: 10px;
-                    height: 10px;
+                    // width: 10px;
+                    // height: 10px;
                     position: absolute;
                     z-index: 10;
+                    transition: 0.3s ease-in-out;
 
                 }
             }
@@ -61,6 +62,12 @@
                     height: 310px;
                     &::before {
                         top: 63px;
+                    }
+
+                    .footer-item_title {
+                        &::after {
+                            transform: rotate(-90deg);
+                        }
                     }
                 }
 
@@ -119,9 +126,9 @@
             &_title {
                 font-size: 18px;
                 padding-top: 2px;
-                &::after {
-                    top: 7px;
-                }
+                // &::after {
+                //     top: 1px;
+                // }
             }
             &:nth-child(n + 2) {
                 height: 63px;
