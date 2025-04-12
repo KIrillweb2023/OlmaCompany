@@ -1,0 +1,205 @@
+@media (max-width: 1400px) {
+    .submit {
+        &__container {
+            width: 50%;
+        }
+        &__text {
+            &-title {
+                font-size: 36px;
+            }
+            &-descr {
+                font-size: 20px;
+            }
+            &-subtitle {
+                font-size: 20px;
+            }
+            &-time {
+                &-item {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .submit {
+        &__container {
+            .blur-second {
+                right: -60px;
+            }
+            .blur-first {
+                left: -60px;
+            }
+            &-form {
+                padding: 60px 40px;
+                &-title {
+                    font-size: 20px;
+                }
+                &-policyText {
+                    font-size: 14px;
+                }
+                &-button {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .submit {
+        &-wrapper {
+            flex-direction: column;
+        }
+        &__container {
+            margin-top: 40px;
+            width: 100%;
+            &-form {
+                &-policyText {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__text {
+            width: 100%;
+            &-title {
+                font-size: 36px;
+                text-align: center;
+            }
+            &-descr {
+                font-size: 20px;
+                text-align: center;
+            }
+            &-subtitle {
+                font-size: 20px;
+                text-align: center;
+            }
+            &-time {
+                justify-content: center;
+                &-item {
+                    font-size: 26px;
+                }
+            }
+       }
+    }
+}
+@media (max-width: 768px) {
+    .submit {
+        padding: 50px 0;
+        &__container {
+            .blur-second {
+                right: -20px;
+            }
+            .blur-first {
+                left: -20px;
+            }
+            &-form {
+                padding: 50px 40px;
+            }
+        }
+        &__text {
+            &-title {
+                font-size: 32px;
+                text-align: left;
+            }
+            &-descr {
+                font-size: 18px;
+                text-align: left;
+            }
+            &-subtitle {
+                font-size: 18px;
+                text-align: left;
+            }
+            &-time {
+                justify-content: flex-start;
+                &-item {
+                    font-size: 24px;
+                }
+            }
+       }
+    }
+}
+@media (max-width: 567px) {
+    .submit {
+        padding: 25px 0;
+        &__container {
+            &-form {
+                padding: 40px 30px;
+                border-radius: 15px;
+            }
+        }
+        &__text {
+            &-title {
+                font-size: 28px;
+            }
+            &-descr {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            &-subtitle {
+                font-size: 16px;
+            }
+          
+       }
+    }
+}
+@media (max-width: 480px) {
+    .submit {
+        padding: 25px 0;
+        .container {
+            padding: 0 10px;
+        }
+        &__container {
+            .blur-second {
+                right: -10px;
+            }
+            .blur-first {
+                left: -10px;
+            }
+            &-form {
+                padding: 40px 20px;
+                border-radius: 15px;
+                &-title {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+                &-input {
+                    font-size: 16px;
+                }
+                &-policyText {
+                    font-size: 12px;
+                    font-weight: 600;
+                    &::after {
+                        top: 0;
+                    }
+                }
+                &-button {
+                    font-size: 14px;
+                }
+            }
+          
+        }
+        &__text {
+            &-title {
+                font-size: 24px;
+            }
+            &-descr {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            &-subtitle {
+                font-size: 16px;
+            }
+
+            &-time {
+                &-item {
+                    border-radius: 15px;
+                    padding: 15px;
+                }
+                &-dott {
+                    padding: 7px;
+                }
+            }
+          
+       }
+    }
+}

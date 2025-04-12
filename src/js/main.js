@@ -128,6 +128,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     AboutText()
     TabsFunction()
-    // MaskaText()
+    MaskaText()
     Hamburger()
 })
