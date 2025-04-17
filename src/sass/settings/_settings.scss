@@ -10,6 +10,10 @@ body {
     font-smoothing: antialiased;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;  
     &:hover {

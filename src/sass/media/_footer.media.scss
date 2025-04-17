@@ -5,21 +5,8 @@
         }
     }
 }
-@media (max-width: 1200px) {
-    .footer {
-       &-wrapper {
-        row-gap: 50px;
-       }
-    }
-}
-@media (max-width: 992px) {
-    .footer {
-       &-wrapper {
-        row-gap: 60px;
-       }
-    }
-}
-@media (max-width: 768px) {
+
+@media (max-width: 1265px) {
     .footer {
         .container {
             padding: 0;
@@ -27,6 +14,10 @@
         &-wrapper {
             row-gap: 20px;
             width: 100%;
+            // flex-direction: row;
+            // flex-wrap: nowrap;
+           
+
         }
        &-item {
             transition: 0.3s ease-in-out;
@@ -41,8 +32,6 @@
                     right: 10px;
                     top: 0px;
                     transform: rotate(90deg);
-                    // width: 10px;
-                    // height: 10px;
                     position: absolute;
                     z-index: 10;
                     transition: 0.3s ease-in-out;
@@ -84,8 +73,16 @@
                 }
             }
            
+            &:nth-child(1) {
+              margin-bottom: 50px;
+            }  
             &:nth-child(2) {
-                margin-top: 40px;
+                // margin-top: 40px;
+                width: 49%;
+            }  
+            &:nth-child(3) {
+               
+                width: 49%;
             }  
             
             &-nav {
@@ -105,6 +102,49 @@
             &-info {
                 margin-top: 35px;
                 padding-left: 20px;
+            }
+       }
+
+       &__subinfo {
+        margin-top: 50px;
+        &-text 
+        {
+            font-size: 12px;
+        }
+       }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+       &-wrapper {
+        row-gap: 30px;
+       }
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+       &-wrapper {
+        row-gap: 25px;
+       }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        .container {
+            padding: 0;
+        }
+        &-wrapper {
+            row-gap: 20px;
+            width: 100%;
+        }
+       &-item {
+          
+            &:nth-child(n + 2) {
+            
+                width: 100%;
+             
+               
             }
        }
 

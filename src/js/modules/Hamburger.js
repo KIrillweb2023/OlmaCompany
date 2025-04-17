@@ -6,10 +6,12 @@ export default function Hamburger() {
 
     function OpenMenu(menu) {
         menu.classList.add("menu-active");
+        document.body.style.overflow = "hidden";
     }
 
     function CloseMenu(menu) {
         menu.classList.remove("menu-active");
+        document.body.style.overflow = "";
     }
 
     OpenBtnMenu.addEventListener("click", (e) => OpenMenu(ThisMenu))

@@ -11,7 +11,6 @@ import MaskaText from "./modules/MaskaText";
 import Hamburger from "./modules/Hamburger";
 import ScrollFooterMenu from "./modules/ScrollFooterMenu";
 
-
 class SlimeInit {
     constructor
         ({ 
@@ -126,10 +125,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     PriceSectionSlider.InitSlider(); 
     ReviewSectionSlider.InitSlider(); 
-
     AboutText()
     TabsFunction()
     MaskaText()
     Hamburger()
     ScrollFooterMenu()
+   
 })

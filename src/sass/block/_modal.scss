@@ -1,0 +1,168 @@
+.modal {
+    position: absolute;
+    left: 0;
+    background-color: #00143191;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 40;
+    // display: none;
+    &__container {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 60px 50px;
+            background-color: #ffffff;
+            border-radius: 40px;
+            position: relative;
+            z-index: 5;
+            width: 30%;
+            &-title {
+                font-size: 24px;
+                font-weight: 600;
+                color: #494949;
+                padding-bottom: 20px;
+            }
+            &-label {
+                margin-top: 20px;
+                width: 100%;
+            }
+            &-input {
+                width: 100%;
+                padding: 20px 25px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #777777;
+                background: #ebebeb;
+                &::placeholder {
+                    color: #acacac;
+                    font-weight: 500;
+                }
+            }
+            &-policy {
+                margin-top: 30px;
+                display: flex;
+
+            }
+            // &-policyText {
+            //     color: #fff;
+            //     a {
+            //         color: #6196FF;
+            //         text-decoration: underline;
+            //     }
+            // }
+            &-button {
+                margin-top: 30px;
+                padding: 15px 50px ;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 600;
+                background-color: #1463FD;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                border: 1px solid #1462fd00;
+                &:hover {
+                    border: 1px solid #1463FD;
+                    background: none;
+                    color: #1463FD;
+                }
+            }
+        }
+    }
+}
+
+
+.modal__container-form-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стили для кастомного чекбокса */
+.modal__container-form-policyText {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3a3a3a;
+    user-select: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    a {
+        padding-left: 8px;
+        color: #6196FF;
+        text-decoration: underline;
+    }
+}
+
+/* Псевдоэлемент для кастомного чекбокса */
+.modal__container-form-policyText::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border: 2px solid #4A3AFF;
+    border-radius: 4px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Галочка (скрыта по умолчанию) */
+.modal__container-form-policyText::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Состояние checked */
+.modal__container-form-checkbox:checked + .modal__container-form-policyText::before {
+    background-color: #4A3AFF;
+    border-color: #4A3AFF;
+}
+
+.modal__container-form-checkbox:checked + .modal__container-form-policyText::after {
+    opacity: 1;
+}
+
+/* Фокус состояние */
+.modal__container-form-checkbox:focus + .modal__container-form-policyText::before {
+    box-shadow: 0 0 0 3px rgba(74, 58, 255, 0.2);
+}
+
+/* Ховер эффект */
+.modal__container-form-policyText:hover::before {
+    border-color: #6a5bff;
+}
+
+/* Отключенное состояние */
+.modal__container-form-checkbox:disabled + .modal__container-form-policyText {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.modal__container-form-checkbox:disabled + .modal__container-form-policyText::before {
+    background: #eee;
+    border-color: #ddd;
+}

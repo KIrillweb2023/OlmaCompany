@@ -109,8 +109,7 @@
                     Olma Web Company
                 </p>
             </div>
-        </aside>
-        
+        </aside> 
         <main class="welcome" role="main" itemscope itemtype="https://schema.org/WebPageElement">
             <div class="container">
                 <div class="welcome-wrapper">
@@ -157,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="scroll-down-arrows" aria-hidden="true">
+                <a href="#price" class="scroll-down-arrows" aria-hidden="true">
                     <svg class="arrow arrow-1" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -167,11 +166,11 @@
                     <svg class="arrow arrow-3" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L10 14L19 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </div>
+                </a>
             </div>
         </main>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <h3 class="price__title">Доступные тарифные планы</h3>
 
@@ -1043,6 +1042,79 @@
                 </div>
             </div>
         </footer> 
+
+
+        <div class="modal">
+            <div class="modal__container">
+                <form action="#" class="modal__container-form" method="POST" itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactPoint">
+                    <h3 class="modal__container-form-title">
+                        Оставьте контактные данные, мы перезвоним и обсудим ваши задачи 
+                    </h3>
+                    
+       
+                    <label for="userName" class="modal__container-form-label">
+                        <input id="userName" 
+                               name="name" 
+                               placeholder="Ваше имя" 
+                               type="text" 
+                               class="modal__container-form-input" 
+                               aria-required="true" 
+                               required 
+                               itemprop="name"
+                               oninput="window.sanitizeInput(this)">
+                    </label>
+                    
+                 
+                    <label for="userPhone" class="modal__container-form-label">
+                        <input id="userPhone" 
+                               name="phone" 
+                               placeholder="+7 (___) ___-__-__" 
+                               type="tel" 
+                               class="modal__container-form-input" 
+                               aria-required="true" 
+                               required 
+                               itemprop="telephone"
+                               maxlength="18"
+                               oninput="window.formatPhoneNumber(this)"
+                               onkeydown="window.sanitizeInput(this)">
+                    </label>
+                    
+            
+                    <label for="userEmail" class="modal__container-form-label">
+                        <input id="userEmail" 
+                               name="email"
+                               placeholder="example@email.com" 
+                               type="email" 
+                               class="modal__container-form-input" 
+                               aria-required="true" 
+                               required 
+                               itemprop="email"
+                               oninput="window.sanitizeInput(this)">
+                    </label>
+                 
+                    <div class="modal__container-form-policy">
+                        <input type="checkbox" 
+                               id="modalCheckbox" 
+                               class="modal__container-form-checkbox"
+                               aria-required="true"
+                               required>
+                        <label for="modalCheckbox" class="modal__container-form-policyText">
+                            Я согласен с <a href="#" itemprop="termsOfService">политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                    
+                    <button type="modal" 
+                            class="modal__container-form-button"
+                            aria-label="Отправить заявку на консультацию"
+                            itemprop="action">
+                        Отправить заявку
+                    </button>
+                    
+                    <meta itemprop="contactType" content="customer service" />
+                    <meta itemprop="url" content="https://вашсайт.ru/contacts" />
+                </form>
+            </div>
+        </div>
         <script src="./js/script.js"></script>
     </body>
 </html>

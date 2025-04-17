@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "@fancyapps/ui": "^5.0.19",
+        "animate.css": "^4.1.1",
         "del": "^6.0.0",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
