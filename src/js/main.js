@@ -10,6 +10,7 @@ import TabsFunction from "./modules/Tabs";
 import MaskaText from "./modules/MaskaText";
 import Hamburger from "./modules/Hamburger";
 import ScrollFooterMenu from "./modules/ScrollFooterMenu";
+import Modal from "./modules/Modal";
 
 class SlimeInit {
     constructor
@@ -130,5 +131,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
     MaskaText()
     Hamburger()
     ScrollFooterMenu()
+    Modal()
    
 })

@@ -1,0 +1,106 @@
+@media (max-width: 1400px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 45%;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 54%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 67%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 90%;
+                &-title {
+                    font-size: 22px;
+                }
+                &-policyText {
+                    padding-left: 30px;
+                }
+                &-button {
+                    font-size: 16px;
+                }
+                &-close {
+                    right: 20px;
+                    top: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 567px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 95%;
+                padding: 40px 40px;
+                &-title {
+                    font-size: 20px;
+                    width: 80%;
+                    padding-bottom: 0;
+                }
+                &-policyText {
+                    padding-left: 30px;
+                    font-size: 14px;
+                }
+                &-button {
+                    font-size: 14px;
+                }
+                &-close {
+                    right: 20px;
+                    top: 20px;
+                    background-color: #ffffff00;
+                    &:hover {
+                        background-color: #ffffff00;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .modal {
+        &__container {
+            &-form {
+                width: 95%;
+                padding: 30px 30px;
+                border-radius: 20px;
+                &-title {
+                    font-size: 18px;
+                }
+                &-policyText {
+                    padding-left: 30px;
+                    font-size: 12px;
+                    a {
+                        padding-left: 5px;
+                    }
+                }
+                &-button {
+                    font-size: 14px;
+                }
+                &-input {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

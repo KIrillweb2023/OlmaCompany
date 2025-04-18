@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .consultation {
+        &-modal {
+            width: 95%;
+        }
+    }
+}
+@media (max-width: 567px) {
+    .consultation {
+        &-modal {
+            padding: 50px 30px;
+        }
+        &-title {
+            width: 80%;
+            font-size: 20px;
+        }
+        &-layout {
+            &-title {
+                font-size: 16px;
+            }
+            &_icon {
+                width: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .consultation {
+        &-modal {
+            padding: 40px 20px;
+        }
+        &-title {
+            width: 80%;
+            font-size: 20px;
+        }
+        &-layout {
+            padding: 15px 20px;
+            &_descr {
+                font-size: 16px;
+            }
+          
+        }
+    }
+}

@@ -110,6 +110,8 @@
                 </p>
             </div>
         </aside> 
+
+
         <main class="welcome" role="main" itemscope itemtype="https://schema.org/WebPageElement">
             <div class="container">
                 <div class="welcome-wrapper">
@@ -124,7 +126,7 @@
                             Если вы стремитесь развивать свой бизнес, не упускайте возможность связаться с нами. Мы разработаем для вас высококачественный веб-сайт или веб-приложение, которое станет мощным инструментом для продвижения ваших товаров и услуг в интернете. Наша команда обеспечит создание уникального и функционального онлайн-продукта, который привлечет внимание вашей целевой аудитории и поможет вам добиться успеха в цифровом пространстве.
                         </p>
                         <div class="welcome__btns">
-                            <button class="welcome__btns-item consult" aria-label="Получить консультацию"  data-modal="consultation" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">Проконсультироваться</button>
+                            <button class="welcome__btns-item consult" aria-label="Получить консультацию"  data-modal="consultationation" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">Проконсультироваться</button>
                             <button class="welcome__btns-item breakins" aria-label="Оставить заявку на разработку"  data-modal="application" itemprop="potentialAction" itemscope itemtype="https://schema.org/Action">Оставить заявку</button>
                         </div>
                     </div>
@@ -1046,11 +1048,15 @@
 
         <div class="modal">
             <div class="modal__container">
+
                 <form action="#" class="modal__container-form" method="POST" itemprop="potentialAction" itemscope itemtype="https://schema.org/ContactPoint">
                     <h3 class="modal__container-form-title">
                         Оставьте контактные данные, мы перезвоним и обсудим ваши задачи 
                     </h3>
                     
+                    <div class="modal__container-form-close">
+                        <img src="./assets/icons/components/CloseMenu/CloseMenuIcon.svg" alt="close-modal-window">
+                    </div>
        
                     <label for="userName" class="modal__container-form-label">
                         <input id="userName" 
@@ -1113,6 +1119,31 @@
                     <meta itemprop="contactType" content="customer service" />
                     <meta itemprop="url" content="https://вашсайт.ru/contacts" />
                 </form>
+            </div>
+        </div>
+
+
+        <div class="consultation">
+            <div class="consultation-modal">
+                <div class="consultation-close">
+                    <img src="./assets/icons/components/CloseMenu/CloseMenuIcon.svg" alt="close-modal-window">
+                </div>
+                <h2 class="consultation-title">Свяжитесь с нами что-бы проконсультироваться</h2>
+                <div class="consultation-layout">
+                    <h4 class="consultation-layout-title">Наша почта</h4>
+                    <div class="consultation-layout-text">
+                        <img class="consultation-layout_icon" src="./assets/icons/components/ConsultIcons/mail-icon.svg" alt="email-icon">
+                        <p class="consultation-layout_descr">olmawebcompany@gmail.com</p>
+                    </div>
+                </div>
+                <div class="consultation-layout">
+                    <h4 class="consultation-layout-title">Наш телефон</h4>
+                    <div class="consultation-layout-text">
+                        <img class="consultation-layout_icon" src="./assets/icons/components/ConsultIcons/phone-icon.svg" alt="phone-icon">
+                        <p class="consultation-layout_descr">+7 (937) 830-04-86</p>
+                    </div>
+                </div>
+               
             </div>
         </div>
         <script src="./js/script.js"></script>

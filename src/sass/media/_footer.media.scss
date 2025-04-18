@@ -49,9 +49,9 @@
                 position: relative;
                 &.active {
                     height: 310px;
-                    &::before {
-                        top: 63px;
-                    }
+                    // &::before {
+                    //     top: 63px;
+                    // }
 
                     .footer-item_title {
                         &::after {
@@ -71,6 +71,7 @@
                     z-index: 10;
                     transition: 0.3s all;
                 }
+               
             }
            
             &:nth-child(1) {
@@ -118,7 +119,7 @@
 @media (max-width: 1200px) {
     .footer {
        &-wrapper {
-        row-gap: 30px;
+        row-gap: 15px;
        }
     }
 }
@@ -170,8 +171,64 @@
                 //     top: 1px;
                 // }
             }
+            &-company {
+                font-size: 20px;
+            }
+            &-subtitle {
+                font-size: 16px;
+            }
+            &-line {
+                width: 40%;
+            }
+            &-icon {
+                width: 15px;
+            }
+            &-block {
+                width: 35px;
+                height: 35px;
+            }
+            &-li {
+                padding: 7px;
+            }
             &:nth-child(n + 2) {
                 height: 63px;
+            }
+            &-nav {
+                padding-left: 30px;
+                &-link {
+                    font-size: 16px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        top: 50%;
+                        left: -20px;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        transition: 0.3s ease-in-out;
+                        border: 2px solid #292929;
+                    }
+                    &:hover {
+                        &::before {
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+            &_requsites {
+                font-size: 14px;
+            }
+            &_subtitle {
+                margin-top: 15px;
+            }
+            &_descr {
+                font-size: 14px;
+                a {
+                    font-size: 14px;
+                }
             }
         }
     }
