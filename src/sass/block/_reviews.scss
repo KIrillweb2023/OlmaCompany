@@ -23,6 +23,8 @@
 
     &-slide {
         padding: 0 10px;
+        cursor: pointer;
+        user-select: none;
         &__information {
             background-color: #fff;
             border-radius: 20px;

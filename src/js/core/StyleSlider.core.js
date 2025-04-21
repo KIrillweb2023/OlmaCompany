@@ -2,7 +2,7 @@ export default class InitSliderStylesContainer  { // настраивание ш
     constructor(SlimeInit) {
         this.SlimeInit = SlimeInit
     }
-  
+
     InitSliderStyle = () => {
         this.SlimeInit._SlideWidth = this.SlimeInit._Slider.clientWidth / this.SlimeInit.previewSlides;
 

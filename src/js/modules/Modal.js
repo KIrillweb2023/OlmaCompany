@@ -21,6 +21,8 @@ export default function Modal() {
     openModal(document.querySelector(".consult"), document.querySelector(".consultation"))
     closeModal(document.querySelector(".consultation-close"), document.querySelector(".consultation"))
 
+    closeModal(document.querySelector(".success-modal-close"), document.querySelector(".success"))
+
     
   
 }

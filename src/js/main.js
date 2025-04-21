@@ -11,6 +11,7 @@ import MaskaText from "./modules/MaskaText";
 import Hamburger from "./modules/Hamburger";
 import ScrollFooterMenu from "./modules/ScrollFooterMenu";
 import Modal from "./modules/Modal";
+import Mailer from "./modules/Mailer";
 
 class SlimeInit {
     constructor
@@ -132,5 +133,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
     Hamburger()
     ScrollFooterMenu()
     Modal()
+    Mailer();
    
 })

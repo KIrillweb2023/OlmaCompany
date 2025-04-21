@@ -36,15 +36,35 @@
             display: flex;
             margin-top: 20px;
         }
+        &-content {
+            display: flex;
+            align-items: center;
+            width: 155px;
+        }
         &-li {
             padding: 10px;
             background: #fff;
             // padding-right: 10px;
             margin-right: 10px;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 50px;
+         
+            // justify-content: center;
+            overflow: hidden;
+            max-width: 154px;
+            width: 60px;
+            transition: 0.4s ease-in-out;
+            &:hover {
+                width: 154px;
+            }
+            &-hidden {
+                padding-left: 10px;
+              
+                &_link {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #1463FD;
+                }
+            }
         }
         &-block {
             border-radius: 100%;
